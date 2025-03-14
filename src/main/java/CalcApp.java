@@ -1,4 +1,4 @@
-package com.gloriane; // Defines the package.
+//package com.gloriane; // Defines the package.
 
 import java.util.Scanner; // Imports Scanner to get user input.
 
