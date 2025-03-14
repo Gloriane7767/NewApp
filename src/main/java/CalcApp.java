@@ -41,6 +41,7 @@ public class CalcApp { // Class name must match the filename.
                 System.out.println("Invalid operator. Please restart the program.");
                 scanner.close(); // Close scanner before exiting.
                 return; // Exit program early.
+        }
 
             // Display result
             System.out.println("Result: " + result);
@@ -49,6 +50,6 @@ public class CalcApp { // Class name must match the filename.
             System.out.println("Calculator Closed.");
         }
     }
-        }
+
 
 
