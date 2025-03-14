@@ -15,3 +15,32 @@ public class CalcApp { // Class name must match the filename.
         System.out.print("Enter second number: ");
         double num2 = scanner.nextDouble();
 
+        // Perform calculation using switch
+        double result; // Declare result variable.
+
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = num1 * num2;
+                break;
+            case '/':
+                if (num2 != 0) { // Prevent division by zero.
+                    result = num1 / num2;
+                } else {
+                    System.out.println("Error: Division by zero is not allowed.");
+                    scanner.close(); // Close scanner before exiting.
+                    return; // Exit program early.
+                }
+                break;
+            default:
+                System.out.println("Invalid operator. Please restart the program.");
+                scanner.close(); // Close scanner before exiting.
+                return; // Exit program early.
+        }
+
+
