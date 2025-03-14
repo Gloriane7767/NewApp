@@ -16,7 +16,7 @@ public class CalcApp { // Class name must match the filename.
         double num2 = scanner.nextDouble();
 
         // Perform calculation using switch
-        double result; // Declare result variable.
+        double result = 0; // Declare and initialize result
 
         switch (operator) {
             case '+':
@@ -41,6 +41,14 @@ public class CalcApp { // Class name must match the filename.
                 System.out.println("Invalid operator. Please restart the program.");
                 scanner.close(); // Close scanner before exiting.
                 return; // Exit program early.
+
+            // Display result
+            System.out.println("Result: " + result);
+
+            scanner.close(); // Close scanner after use.
+            System.out.println("Calculator Closed.");
+        }
+    }
         }
 
 
